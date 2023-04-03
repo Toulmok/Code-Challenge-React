@@ -144,7 +144,7 @@ const arcgisMiddleWare = store => next => (action) => {
                     const t = tag&&tag.data,
                           i = {method:"post"},
                           itemJSON = portalItem.toJSON()
-                    i.query = itemJSON
+                    i.query = itemJSON;
                     
                     if(itemJSON["tags"]) {
                       itemJSON["tags"].sort()
